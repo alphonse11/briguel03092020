@@ -1,0 +1,203 @@
+body,
+html {
+    margin: 0;
+}
+
+#blocpage {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*MARGE*/
+#marge {
+    background-color: #FDD835;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#photoCV {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 200px;
+    box-shadow: 1px 1px 12px #555;
+}
+
+#contact p {
+    margin-left: 30px;
+}
+
+#marge h2 {
+    background-color: #404040;
+    color: #FDD835;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#apropos {
+    flex-grow: 2;
+}
+
+#apropos p {
+    margin: 30px;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.logo_border{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+a {
+    color: black;
+}
+
+/*MAIN*/
+main {
+    padding: 50px;
+}
+
+header {
+    height: 100px;
+}
+
+#nom_complet{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#prenom {
+    color: #FDD835;
+}
+
+#trait {
+    max-width: 80px;
+    border-bottom: 1.2px solid #FDD835;
+}
+
+.titre {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1.2px solid #FDD835;
+    margin: 40px 0 40px 0;
+}
+
+main h2 {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.element {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.dates {
+    min-width: 250px;
+    display: flex;
+
+}
+
+.entreprise {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main p {
+    max-width: 600px;
+}
+
+.boss {
+    font-weight: bold;
+}
+
+/*Figures*/
+.rond {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #FDD835;
+    margin: 3px 20px;
+}
+
+.cercle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid #FDD835;
+    margin: 3px 20px;
+
+}
+
+.point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FDD835;
+    margin: 2px
+}
+
+/*Responsive*/
+@media all and (max-width: 1000px) {
+    #blocpage {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    #marge {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .element {
+        flex-direction: column;
+    }
+
+    .dates {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .cercle,
+    .rond,
+    #loisirs,
+    #apropos,
+    #photo {
+        display: none;
+    }
+
+    #recommandations .element {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px) {
+    header {
+        margin-bottom: 40px;
+        font-size: 10px;
+    }
+     
+    main h2 {
+        font-size: 130%;
+    }
+}
+
+@media all and (max-width: 380px){
+    h1{
+        font-size: 18px;
+    }
+}
